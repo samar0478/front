@@ -1,0 +1,445 @@
+/* Enhanced Beautiful App Styles */
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.6);
+  }
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Global styles */
+.App {
+  text-align: center;
+}
+
+/* Glass morphism effects */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Enhanced lesson content styling */
+.lesson-content {
+  line-height: 1.8;
+}
+
+.lesson-content h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 3s ease-in-out infinite;
+  background-size: 200% 200%;
+}
+
+.lesson-content h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 2rem 0 1rem 0;
+  color: #374151;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.dark .lesson-content h3 {
+  color: #f3f4f6;
+}
+
+.lesson-content h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  border-radius: 2px;
+}
+
+.lesson-content h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.75rem 0;
+  color: #4b5563;
+}
+
+.dark .lesson-content h4 {
+  color: #d1d5db;
+}
+
+.lesson-content p {
+  margin-bottom: 1.25rem;
+  color: #6b7280;
+  font-size: 1.1rem;
+}
+
+.dark .lesson-content p {
+  color: #d1d5db;
+}
+
+.lesson-content ul, .lesson-content ol {
+  margin: 1.5rem 0;
+  padding-left: 2rem;
+}
+
+.lesson-content li {
+  margin-bottom: 0.75rem;
+  color: #6b7280;
+  position: relative;
+}
+
+.dark .lesson-content li {
+  color: #d1d5db;
+}
+
+.lesson-content ul li::marker {
+  color: #3b82f6;
+  font-size: 1.2em;
+}
+
+.lesson-content ol li::marker {
+  color: #8b5cf6;
+  font-weight: 600;
+}
+
+/* Enhanced code blocks */
+.lesson-content .code-example {
+  background: linear-gradient(135deg, #1f2937, #374151);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border: 1px solid #4b5563;
+  position: relative;
+  overflow: hidden;
+}
+
+.lesson-content .code-example::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #3b82f6, transparent);
+}
+
+.lesson-content .code-example h4 {
+  color: #f3f4f6;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lesson-content .code-example pre {
+  background: none;
+  color: #f3f4f6;
+  font-family: 'Fira Code', 'Monaco', 'Consolas', monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  overflow-x: auto;
+  margin: 0;
+}
+
+.lesson-content .code-example code {
+  color: #f3f4f6;
+  font-family: inherit;
+}
+
+/* Special content boxes */
+.lesson-content .fun-fact,
+.lesson-content .pro-tip,
+.lesson-content .safety-warning,
+.lesson-content .health-tip,
+.lesson-content .emergency-warning,
+.lesson-content .nepal-tip,
+.lesson-content .warning-tip,
+.lesson-content .privacy-tip,
+.lesson-content .safety-tip,
+.lesson-content .emergency-tip,
+.lesson-content .diy-tip {
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-left: 4px solid;
+  position: relative;
+  backdrop-filter: blur(10px);
+  animation: float 3s ease-in-out infinite;
+}
+
+.lesson-content .fun-fact {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.05));
+  border-left-color: #3b82f6;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.lesson-content .pro-tip {
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(16, 185, 129, 0.05));
+  border-left-color: #22c55e;
+  border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.lesson-content .safety-warning,
+.lesson-content .emergency-warning,
+.lesson-content .warning-tip {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(220, 38, 38, 0.05));
+  border-left-color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  animation: glow 2s ease-in-out infinite;
+}
+
+.lesson-content .health-tip,
+.lesson-content .privacy-tip,
+.lesson-content .safety-tip {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.05));
+  border-left-color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.lesson-content .nepal-tip,
+.lesson-content .emergency-tip {
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(147, 51, 234, 0.05));
+  border-left-color: #a855f7;
+  border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.lesson-content .diy-tip {
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.1), rgba(234, 88, 12, 0.05));
+  border-left-color: #f97316;
+  border: 1px solid rgba(249, 115, 22, 0.2);
+}
+
+/* Grid layouts for content */
+.lesson-content .device-grid,
+.lesson-content .language-grid,
+.lesson-content .concept-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.lesson-content .device,
+.lesson-content .language,
+.lesson-content .concept {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.lesson-content .device:hover,
+.lesson-content .language:hover,
+.lesson-content .concept:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.dark .lesson-content .device,
+.dark .lesson-content .language,
+.dark .lesson-content .concept {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Image styling */
+.lesson-content img {
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.lesson-content img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Enhanced scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+}
+
+/* Responsive text sizes */
+@media (max-width: 768px) {
+  .lesson-content h2 {
+    font-size: 2rem;
+  }
+  
+  .lesson-content h3 {
+    font-size: 1.5rem;
+  }
+  
+  .lesson-content .device-grid,
+  .lesson-content .language-grid,
+  .lesson-content .concept-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+/* Loading shimmer effect */
+.shimmer {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200px 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.dark .shimmer {
+  background: linear-gradient(90deg, #374151 25%, #4b5563 50%, #374151 75%);
+  background-size: 200px 100%;
+}
+
+/* Beautiful hover effects */
+.hover-lift {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Gradient text animations */
+.gradient-text {
+  background: linear-gradient(270deg, #3b82f6, #8b5cf6, #ec4899, #f97316);
+  background-size: 800% 800%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 4s ease infinite;
+}
+
+/* Pulse animation for special elements */
+.pulse-gentle {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .8;
+  }
+}
+
+/* Enhanced focus states for accessibility */
+.focus\:ring-4:focus {
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.3);
+}
+
+.dark .focus\:ring-4:focus {
+  box-shadow: 0 0 0 4px rgba(147, 51, 234, 0.3);
+}
+
+/* Custom selection color */
+::selection {
+  background: rgba(59, 130, 246, 0.3);
+  color: inherit;
+}
+
+::-moz-selection {
+  background: rgba(59, 130, 246, 0.3);
+  color: inherit;
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Print styles for PDF downloads */
+@media print {
+  .lesson-content {
+    color: black !important;
+    background: white !important;
+  }
+  
+  .lesson-content h2,
+  .lesson-content h3,
+  .lesson-content h4 {
+    color: black !important;
+  }
+  
+  .lesson-content .fun-fact,
+  .lesson-content .pro-tip,
+  .lesson-content .safety-warning,
+  .lesson-content .health-tip {
+    border: 2px solid #ccc !important;
+    background: #f9f9f9 !important;
+    break-inside: avoid;
+  }
+}
