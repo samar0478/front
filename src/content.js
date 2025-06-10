@@ -1,8 +1,8 @@
 const SAMPLE_CONTENT = {
   en: {
     siteName: "Coding Guide",
-    subtitle: "Learn Computer Science the Fun Way!",
-    tagline: "Empowering Grade 9 & 10 students with essential CS knowledge",
+    subtitle: "Your Path to Knowledge Starts Here 🌟",
+    tagline: "Bite-Sized Learning, Big Results 🍎",
     startGrade9: "Start Grade 9",
     startGrade10: "Start Grade 10",
     startEssentials: "Essential Skills",
@@ -97,7 +97,7 @@ const SAMPLE_CONTENT = {
     },
     {
       "id": "internet-metaphor",
-      "title": "5. A Real-Life Metaphor",
+      "title": "🏘 Real-Life Metaphor",
       "content": `
         <p>📬 <strong>Internet</strong> = Big digital city</p>
         <p>🏘 <strong>Website</strong> = House/shop</p>
@@ -223,7 +223,7 @@ const SAMPLE_CONTENT = {
               },
               {
                 id: "images",
-                title: "Images: The Photo Frames",
+                title: "🖼️Images",
                 content: `
                   <h2>Images: The Photo Frames 🖼️</h2>
                   <p><code>&lt;img&gt;</code> is a frame. <code>src='dog.jpg'</code> is the picture inside. Wrong name? Empty frame!</p>
@@ -237,7 +237,7 @@ const SAMPLE_CONTENT = {
               },
               {
                 id: "folders",
-                title: "Folders: The Filing Cabinet",
+                title: "📁Folders",
                 content: `
                   <h2>Folders: The Filing Cabinet 🗄️</h2>
                   <p>Your website folder is a filing cabinet. If index.html and photo.jpg are in different drawers, the browser gets lost!</p>
@@ -365,168 +365,170 @@ const SAMPLE_CONTENT = {
   title: " CSS परिचय",
   icon: "🎨",
   lessons: [
-    {
-      id: "css-lesson-1",
-      title: "🧩 Lesson 1: CSS के हो?",
-      content: `
-        <p><strong>CSS</strong> को पूरा नाम हो <strong>Cascading Style Sheets</strong>.</p>
-        <p>यो तपाईंको <strong>वेबपेजलाई सजाउन</strong> मद्दत गर्छ — जस्तै कक्षा सजाउँदा।</p>
-        <p>HTML बनाउँछ संरचना — जस्तै साधारण घर बनाउनु।<br>
-        CSS ले रङ हाल्छ, पर्दा राख्छ, डिज़ाइन गर्छ, र सबै कुरा ठ्याक्कै राख्छ।</p>
-        <p><em>🧠 उधाहरण:</em> HTML = सादा–टी–शर्ट। CSS = उसमा डिजाइन — रङ, प्याटर्न, लोगो आदि।</p>
-        <p>✏️ सम्झनुहोस्:</p>
-        <ul>
-          <li>CSS = Style</li>
-          <li>HTML = Structure</li>
-        </ul>`
-    },
-    {
-      id: "css-lesson-2",
-      title: "🧩  CSS किन प्रयोग गर्छौ?",
-      content: `
-        <p>CSS बिना, सबै वेबपेजहरू सक्कली कागज जस्तै उदास लाग्छ।<br>
-        CSS ले थप्छ:</p>
-        <ul>
-          <li>लेखलाई <strong>रंगीन र ठूलो/साना</strong></li>
-          <li><strong>पृष्ठभूमि</strong> थप्छ</li>
-          <li>वस्तुहरूलाई बाँया, दायाँ, वा केन्द्रमा सार्न</li>
-          <li><strong>आकार र सीमाहरू</strong> थप्न</li>
-          <li><strong>मोबाइल या कम्प्युटर अनुसार डिजाइन</strong></li>
-        </ul>
-        <p><em>🧠 उधाहरण:</em> तपाईंको स्कुलको किताब जुन रङ–रहित हो भने कति उब्बल लाग्थ्यो?</p>`
-    },
-    {
-      id: "css-lesson-3",
-      title: "🧩 CSS कहाँ लेख्ने?",
-      content: `
-        <p>तीन तरिका:</p>
-        <ol>
-          <li><strong>Inline CSS</strong> – HTML ट्याग भित्र<br>
-            <code>&lt;p style="color:red;"&gt;Hello&lt;/p&gt;</code></li>
-          <li><strong>Internal CSS</strong> – HTML कागजातको <code>&lt;head&gt;</code> भित्र<br>
-            <code>&lt;style&gt; p { color: red; } &lt;/style&gt;</code></li>
-          <li><strong>External CSS</strong> – छुट्टै <code>.css</code> फाइलमा<br>
-            <code>p { color: red; }</code><br>
-            HTML मा लिंक गर्ने:<br>
-            <code>&lt;link rel="stylesheet" href="style.css"&gt;</code></li>
-        </ol>
-        <p><em>🧠 उधाहरण:</em> Inline = हातमा टाँसेको नोट<br>
-        Internal = किताबभित्रको नोट<br>
-        External = छुट्टै नोटबुकमा लेखेको नोट।</p>`
-    },
-    {
-      id: "css-lesson-4",
-      title: "🧩 CSS Syntax (लेखन शैली)",
-      content: `
-        <p>CSS को नियम यस्तो हुन्छ:</p>
-        <pre><code>selector {
+  
+  {
+    id: "css-lesson-1",
+    title: "🎨 Lesson 1: What is CSS?",
+    content: `
+      <p><strong>CSS</strong> stands for <strong>Cascading Style Sheets</strong>.</p>
+      <p>It helps you <strong>decorate your webpage</strong> — like decorating a classroom.</p>
+      <p>HTML builds the structure — like making a simple house.<br>
+      CSS adds color, curtains, design, and places everything nicely.</p>
+      <p><em>🧠 Example:</em> HTML = plain t-shirt. CSS = designs on it — color, pattern, logo, etc.</p>
+      <p>✏️ Remember:</p>
+      <ul>
+        <li>CSS = Style</li>
+        <li>HTML = Structure</li>
+      </ul>`
+  },
+  {
+    id: "css-lesson-2",
+    title: "🌈 Why use CSS?",
+    content: `
+      <p>Without CSS, all webpages feel dull like plain paper.<br>
+      CSS adds:</p>
+      <ul>
+        <li><strong>Color and size</strong> to text</li>
+        <li><strong>Backgrounds</strong></li>
+        <li>Moves items left, right, or center</li>
+        <li><strong>Shapes and borders</strong></li>
+        <li><strong>Designs for mobile or computer</strong></li>
+      </ul>
+      <p><em>🧠 Example:</em> How boring would your schoolbook feel if it had no colors?</p>`
+  },
+  {
+    id: "css-lesson-3",
+    title: "🛠️ Where to write CSS?",
+    content: `
+      <p>Three ways:</p>
+      <ol>
+        <li><strong>Inline CSS</strong> – Inside HTML tag<br>
+          <code>&lt;p style="color:red;"&gt;Hello&lt;/p&gt;</code></li>
+        <li><strong>Internal CSS</strong> – Inside HTML's <code>&lt;head&gt;</code><br>
+          <code>&lt;style&gt; p { color: red; } &lt;/style&gt;</code></li>
+        <li><strong>External CSS</strong> – In a separate <code>.css</code> file<br>
+          <code>p { color: red; }</code><br>
+          Link it in HTML:<br>
+          <code>&lt;link rel="stylesheet" href="style.css"&gt;</code></li>
+      </ol>
+      <p><em>🧠 Example:</em> Inline = sticky note on hand<br>
+      Internal = note inside book<br>
+      External = separate notebook</p>`
+  },
+  {
+    id: "css-lesson-4",
+    title: "📝 CSS Syntax",
+    content: `
+      <p>CSS rules look like this:</p>
+      <pre><code>selector {
   property: value;
 }</code></pre>
-        <p><strong>उदाहरण:</strong></p>
-        <pre><code>h1 {
+      <p><strong>Example:</strong></p>
+      <pre><code>h1 {
   color: blue;
   font-size: 24px;
 }</code></pre>
-        <p>यहाँ:</p>
-        <ul>
-          <li><code>h1</code> – जे स्टाइल गर्न खोज्दैछौं (Selector)</li>
-          <li><code>color</code> – गुण (Property)</li>
-          <li><code>blue</code> – मान (Value)</li>
-        </ul>
-        <p>✏️ जरूरी:</p>
-        <ul>
-          <li>हरेक लाइनको अन्त्यमा <code>;</code> राख्नुहोस्</li>
-          <li>हरेक नियम ब्लकमा <code>{ }</code> प्रयोग गर्नुपर्छ</li>
-        </ul>
-        <p><em>🧠 उधाहरण:</em> "h1 विद्यार्थी हो, नियम: निलो जुत्ता लगाउँ।"</p>`
-    },
-    {
-      id: "css-lesson-5",
-      title: "🧩साझा CSS Properties",
-      content: `
-        <table>
-          <tr>
-            <th>Property</th><th>के परिवर्तन गर्छ?</th><th>उदाहरण</th>
-          </tr>
-          <tr><td>color</td><td>लेखको रङ</td><td><code>color: red;</code></td></tr>
-          <tr><td>background</td><td>पृष्ठभूमि रंग/छवि</td><td><code>background: yellow;</code></td></tr>
-          <tr><td>font-size</td><td>लेखको आकार</td><td><code>font-size: 20px;</code></td></tr>
-          <tr><td>text-align</td><td>लेखको स्थान</td><td><code>text-align: center;</code></td></tr>
-          <tr><td>border</td><td>सीमा बनाउँछ</td><td><code>border: 1px solid black;</code></td></tr>
-          <tr><td>padding</td><td>भित्रको स्थान</td><td><code>padding: 10px;</code></td></tr>
-          <tr><td>margin</td><td>बाहिरको स्थान</td><td><code>margin: 10px;</code></td></tr>
-        </table>
-        <p><em>🧠 उधाहरण:</em> Padding = झोलामा राखेको वस्तुको वरिपरि स्पेस<br>
-        Margin = दुई झोला बीचको दूरी<br>
-        Border = झोलाको फूल्डर जस्तो</p>`
-    },
-    {
-      id: "css-lesson-6",
-      title: "🧩  CSS Selectors",
-      content: `
-        <p>Selector भन्नाले हुन्छ: तपाईं **कसलाई** स्टाइल गर्न चाहनुहुन्छ।</p>
-        <p>साझाselectors:</p>
-        <ul>
-          <li><code>h1</code>, <code>p</code>, <code>div</code> – ट्याग</li>
-          <li><code>.class</code> – डटबाट सुरु</li>
-          <li><code>#id</code> – ह्यासबाट सुरु</li>
-        </ul>
-        <pre><code>h1 { color: green; }
+      <p>Here:</p>
+      <ul>
+        <li><code>h1</code> – what you want to style (Selector)</li>
+        <li><code>color</code> – feature to change (Property)</li>
+        <li><code>blue</code> – value</li>
+      </ul>
+      <p>✏️ Important:</p>
+      <ul>
+        <li>End each line with <code>;</code></li>
+        <li>Use <code>{ }</code> for rule blocks</li>
+      </ul>
+      <p><em>🧠 Example:</em> "h1 is the student, rule: wear blue shoes."</p>`
+  },
+  {
+    id: "css-lesson-5",
+    title: "📚 Common CSS Properties",
+    content: `
+      <table>
+        <tr>
+          <th>Property</th><th>What it changes?</th><th>Example</th>
+        </tr>
+        <tr><td>color</td><td>Text color</td><td><code>color: red;</code></td></tr>
+        <tr><td>background</td><td>Background color/image</td><td><code>background: yellow;</code></td></tr>
+        <tr><td>font-size</td><td>Text size</td><td><code>font-size: 20px;</code></td></tr>
+        <tr><td>text-align</td><td>Text position</td><td><code>text-align: center;</code></td></tr>
+        <tr><td>border</td><td>Creates a border</td><td><code>border: 1px solid black;</code></td></tr>
+        <tr><td>padding</td><td>Inside spacing</td><td><code>padding: 10px;</code></td></tr>
+        <tr><td>margin</td><td>Outside spacing</td><td><code>margin: 10px;</code></td></tr>
+      </table>
+      <p><em>🧠 Example:</em> Padding = space inside a bag<br>
+      Margin = space between two bags<br>
+      Border = the zipper of the bag</p>`
+  },
+  {
+    id: "css-lesson-6",
+    title: "🔍 CSS Selectors",
+    content: `
+      <p>Selector means: who do you want to style?</p>
+      <p>Common selectors:</p>
+      <ul>
+        <li><code>h1</code>, <code>p</code>, <code>div</code> – tags</li>
+        <li><code>.class</code> – starts with dot</li>
+        <li><code>#id</code> – starts with hash</li>
+      </ul>
+      <pre><code>h1 { color: green; }
 .red-text { color: red; }
 #main-box { color: blue; }</code></pre>
-        <p><em>🧠 उधाहरण:</em> शिक्षक = selector, नियम = style, विद्यार्थीहरू = HTML तत्वहरू</p>`
-    },
-    {
-      id: "css-lesson-7",
-      title: "🧩  HTML र CSS कसरी जोड्ने?",
-      content: `
-        <p>External CSS प्रयोग गर्न:</p>
-        <ol>
-          <li><code>style.css</code> नामको फाइल बनाउनुहोस्</li>
-          <li>CSS नियम त्यहाँ लेख्नुहोस्</li>
-          <li>HTML को <code>&lt;head&gt;</code> भित्र यो थप्नुहोस्:</li>
-        </ol>
-        <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
-        <p>✅ हुन्छ! HTML र CSS अब मिलेर काम गर्छन्।</p>`
-    },
-    {
-      id: "css-lesson-8",
-      title: "🧩 CSS रंग (Colors)",
-      content: `
-        <p>रंग दिने तरिका:</p>
-        <ul>
-          <li>नाम – <code>color: red;</code></li>
-          <li>HEX – <code>color: #ff0000;</code></li>
-          <li>RGB – <code>color: rgb(255, 0, 0);</code></li>
-        </ul>
-        <p>✏️ परीक्षा सजिलो राख्न:<br>
-        बस “blue”, “green”, “orange” जस्ता नाम प्रयोग गर्नुहोस्।</p>`
-    },
-    {
-      id: "css-lesson-box-model",
-      title: "🧩  CSS Box Model (सारांशमा)",
-      content: `
-        <p><strong>CSS Box Model</strong> बताउँछ: वेबपेजमा रहेको प्रत्येक वस्तु एक <strong>बक्स</strong> भित्र हुन्छ — जसको भित्र र बाहिर स्पेस हुन्छ।</p>
-        <p><em>🧠 जस्तो तपाईंको टिफिन बक्स:</em></p>
-        <table>
-          <tr><th>Part</th><th>साँचो जीवन</th><th>वेबपेजमा</th></tr>
-          <tr><td><strong>Content</strong></td><td>रोटी वा खाना</td><td>लेख, तस्बिर आदि</td></tr>
-          <tr><td><strong>Padding</strong></td><td>भित्रको रैपर</td><td>बक्सको भित्र स्पेस</td></tr>
-          <tr><td><strong>Border</strong></td><td>टिफिनको पर्खाल</td><td>बक्स चिरिएको लाइन</td></tr>
-          <tr><td><strong>Margin</strong></td><td>बक्स वरिपरि स्पेस</td><td>बक्सको बाहिर स्पेस</td></tr>
-        </table>
-        <p>✅ <strong>छिटो कोड:</strong></p>
-        <pre><code>.box {
-  margin: 20px;        /* बाहिरको दूरी */
-  border: 2px solid black;  /* बक्सको पर्खाल */
-  padding: 10px;       /* भित्रको स्पेस */
+      <p><em>🧠 Example:</em> Teacher = selector, Rule = style, Students = HTML elements</p>`
+  },
+  {
+    id: "css-lesson-7",
+    title: "🔗 How to connect HTML and CSS?",
+    content: `
+      <p>To use External CSS:</p>
+      <ol>
+        <li>Create a file named <code>style.css</code></li>
+        <li>Write your CSS rules there</li>
+        <li>Add this in the HTML <code>&lt;head&gt;</code>:</li>
+      </ol>
+      <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+      <p>✅ Done! HTML and CSS now work together.</p>`
+  },
+  {
+    id: "css-lesson-8",
+    title: "🎨 CSS Colors",
+    content: `
+      <p>Ways to give color:</p>
+      <ul>
+        <li>By name – <code>color: red;</code></li>
+        <li>By HEX – <code>color: #ff0000;</code></li>
+        <li>By RGB – <code>color: rgb(255, 0, 0);</code></li>
+      </ul>
+      <p>✏️ For easier exams:<br>
+      Just use simple names like “blue”, “green”, “orange”.</p>`
+  },
+  {
+    id: "css-lesson-box-model",
+    title: "📦 CSS Box Model (In Short)",
+    content: `
+      <p><strong>CSS Box Model</strong> means: every item on a webpage is inside a <strong>box</strong> — with space inside and outside.</p>
+      <p><em>🧠 Like your lunchbox:</em></p>
+      <table>
+        <tr><th>Part</th><th>Real Life</th><th>On Webpage</th></tr>
+        <tr><td><strong>Content</strong></td><td>Food</td><td>Text, image, etc.</td></tr>
+        <tr><td><strong>Padding</strong></td><td>Inner wrapper</td><td>Space inside the box</td></tr>
+        <tr><td><strong>Border</strong></td><td>Lunchbox wall</td><td>The line around the box</td></tr>
+        <tr><td><strong>Margin</strong></td><td>Space around the box</td><td>Outer space of the box</td></tr>
+      </table>
+      <p>✅ <strong>Quick Code:</strong></p>
+      <pre><code>.box {
+  margin: 20px;        /* Outer space */
+  border: 2px solid black;  /* Box wall */
+  padding: 10px;       /* Inner space */
 }</code></pre>`
-    }
-  ]
+  }
+]
 },
+
 {
   id: "programming-basics",
-  title: "💻 Introduction to Programming",
+  title: " Introduction to Programming",
   icon: "💻",
   lessons: [
     {
@@ -637,14 +639,8 @@ const SAMPLE_CONTENT = {
       content: `
         <h2>QBASIC = Your Computer’s Toy Box! 🎁</h2>
         <p>QBASIC is a <strong>language</strong> like English or Nepali, but it talks to a <strong>computer</strong> instead of people.</p>
-        <div class="code-example">
-                    <h4>🎯 Simple Python Example:</h4>
-                    <pre><code>
-# This program greets the user
-name = input("What's your name? ")
-print(f"Hello, {name}! Welcome to programming!")
-                    </code></pre>
-                  </div>
+        
+                 
 
         <h3>🔧 Real-Life Code Examples</h3>
         <ul>
@@ -800,10 +796,9 @@ PRINT "HELLO "; N$; "! YOU ARE AWESOME!"
                 title:"Create a table",
                 content:`
                   <h3>🔹 5. Create a Simple Database in MS Access</h3>
-           
-
     <ol>
-      <li><strong>Open Access</strong>: Start → Search "Access"</li>
+      <li>
+      <strong>Open Access</strong>: Start → Search "Access"</li>
       <li><strong>Create new:</strong> Click "Blank Database" → Name it → Click "Create"</li>
       <li><strong>Design Table:</strong>
         <ul>
@@ -835,11 +830,11 @@ PRINT "HELLO "; N$; "! YOU ARE AWESOME!"
           {
             id: "Modular",
             title: " Modular Programming",
-            icon: "🐍",
+            icon: "🚀",
             lessons: [
               { 
                 id:"Introduction",
-                title:"Introduction",
+                title:"🌟Introduction",
                 content:`
 <h2>🧩 <strong>Lesson 9: Modular Programming – Super Easy Version</strong></h2>
 
@@ -870,7 +865,7 @@ PRINT "HELLO "; N$; "! YOU ARE AWESOME!"
               },
               {
                 id:"modules",
-                title:"Modules in QBASIC", 
+                title:"🎓Modules in QBASIC", 
                 content:`
                  <h3>🔹 3. What Are Modules in QBASIC?</h3>
     <table>
@@ -880,19 +875,22 @@ PRINT "HELLO "; N$; "! YOU ARE AWESOME!"
     </table>
 
     <h3>🔧 Sub Procedure – Let’s Learn It Like a Game</h3>
-    <pre><code>DECLARE SUB Series()
-CALL Series
-END
+    <div class="code-example">
+      
+       <pre><code>DECLARE SUB Series()
+            CALL Series
+            END
 
-SUB Series
-  X = 1
-  Y = 1
-  FOR Z = 1 TO 4
-    PRINT X;
-    Y = Y + 1
-    X = X * 10 + Y
-  NEXT Z
-END SUB</code></pre>
+            SUB Series
+              X = 1
+              Y = 1
+              FOR Z = 1 TO 4
+                PRINT X;
+                Y = Y + 1
+                X = X * 10 + Y
+              NEXT Z
+            END SUB</code></pre>
+            </div>
 
     <h4>🤔 How to Think About It:</h4>
     <ul>
@@ -1750,6 +1748,51 @@ void main() {
             icon: "🔧",
             description: "Show them they can solve problems - confidence boost",
             lessons: [
+{
+  id:"playdough",
+  title:"🎉playdough",
+  content: `
+              <div class="playdough-lesson p-4 bg-yellow-50 rounded-xl shadow-md">
+              <img src="./images/playdough.png"  class="w-full md:w-3/4 lg:w-1/2 mx-auto rounded-lg shadow-md" alt="Your Snapshot of Changunarayan">
+  <h2 class="text-2xl font-bold mb-3">DIY chamalkoAata Playdough</h2>
+  <p class="mb-4"><strong>Kina?</strong> Surakshit chha, sasto chha, ra gharmai bhaeko samagri prayog garchha.</p>
+
+  <h3 class="text-xl font-semibold mb-2">🧂 Samagri (Ingredients):</h3>
+  <ul class="list-disc list-inside mb-4">
+    <li><strong>1 cup</strong> chamal ko aata (wa ramrari pisheko chamal ko dhulo)</li>
+    <li><strong>½ cup</strong> baki dal ko pani (siddhaeko dal ko lassi) <br><em>Haina bhane:</em> ½ cup maida (seto aata) + pani</li>
+    <li><strong>1 tbsp</strong> tel (kunai pani khane tel)</li>
+    <li>Food coloring (besar, chukandar ko ras, wa pisheko leaves haru)</li>
+  </ul>
+
+  <h3 class="text-xl font-semibold mb-2">👩‍🍳 Bidhi (Steps):</h3>
+  <ol class="list-decimal list-inside mb-4 space-y-1">
+    <li>Chamal ko aata + dal ko pani ek bhadama misaaunus (lumps nabanauna dhilo dhilo pani halnus).</li>
+    <li>1 tbsp tel halnus (yesle playdough lai naram rakhchha).</li>
+    <li>5 minute samma musnus jab samma yo chapati ko aata jastai hunna.
+      <ul class="list-disc list-inside ml-4 text-sm">
+        <li>Dherai chipleko chha? Ajha chawal ko aata halnus.</li>
+        <li>Dherai sukha chha? Haatma pani lagayera musnus.</li>
+      </ul>
+    </li>
+    <li>Bhaag lagayera rang dinus:
+      <ul class="list-disc list-inside ml-4 text-sm">
+        <li><strong>Pahilo:</strong> Besar ko dhulo</li>
+        <li><strong>Gulabi:</strong> Chukandar ko ras</li>
+        <li><strong>Hariyo:</strong> Palungo/Dhania ko paste</li>
+      </ul>
+    </li>
+    <li>Dubbo ma rakhnus (fridge bina 1 hapta samma tikchha).</li>
+  </ol>
+
+  <h3 class="text-xl font-semibold mb-2">🛠️ Chamal ko Aata Chaina? Yo Prayog Garnus:</h3>
+  <ul class="list-disc list-inside">
+    <li><strong>Rotiko aata</strong> (aata + pani + tel) – thorai kam khichaune hunchha tara kaam garchha.</li>
+    <li><strong>Prayog gareko chiya pati</strong> (sukayera pisnus) texture ko lagi.</li>
+  </ul>
+</div>
+`
+},
               {
                 id: "phone-stand-diy",
                 title: "How to make a phone stand from paper/cardboard",
@@ -1804,8 +1847,8 @@ void main() {
   },
   np: {
     siteName: "Coding Guide",
-    subtitle: "कम्प्युटर विज्ञान मजाले सिक्नुहोस्!",
-    tagline: "कक्षा ९ र १० का विद्यार्थीहरूलाई आवश्यक CS ज्ञान प्रदान गर्दै",
+    subtitle: "ज्ञानको यात्रा यहाँबाट सुरु हुन्छ 🌟",
+    tagline: "छोटो सिकाई, ठूलो नतिजा 🍎",
     startGrade9: "कक्षा ९ सुरु गर्नुहोस्",
     startGrade10: "कक्षा १० सुरु गर्नुहोस्",
     startEssentials: "आवश्यक सीपहरू",
@@ -1825,19 +1868,19 @@ void main() {
   
 {
   id: "internet-lesson",
-  title: "🌐 इन्टरनेट के हो?",
-  icon: "🧩",
+  title: " इन्टरनेट के हो?",
+  icon: "🌐",
   lessons: [
     {
       "id": "internet-intro-question",
-      "title": "इन्टरनेट = तपाईंले प्रयोग गरिरहनुभएको चीज!",
+      "title": "🧩इन्टरनेट ?",
       "content": `
         <h2>इन्टरनेट = तपाईंले प्रयोग गरिरहनुभएको चीज!</h2>
         <p>❓ तपाईंले कहिल्यै Facebook, TikTok, वा Google प्रयोग गर्नुभएको छ?</p>
         <p>यदि हो—तपाईंले इन्टरनेट प्रयोग गर्नुभएको छ।</p>      
      
         <h3>📘Just Imagine</h3>
-        <p>तपाईंले Ram lai  पत्र लेख्नुभयो। चिठ्ठी पुग्यो। यो सञ्चार हो।</p>
+        <p>तपाईंले Ram lai  letter  लेख्नुभयो। चिठ्ठी पुग्यो। यो सञ्चार हो।</p>
         <p>अब तपाईंको फोन वा कम्प्युटरले त्यो सन्देश <strong>क्षणमै पठाउँछ</strong>.</p>
         <p>👉 त्यो नै <strong>इन्टरनेट</strong> हो—फोन, कम्प्युटर र मानिसहरूलाई इनस्टेन्टमा जोड्ने जादू जाल।</p>
         <p>इसेलाई ठूलो अदृश्य मकडी जाल 🌐 झैं सोच्नुहोस्—विश्वभर फैलिएको:</p>
@@ -1867,7 +1910,7 @@ void main() {
     },
     {
       id: "internet-what-you-need",
-      title: "📱 इन्टरनेट प्रयोग गर्न के चाहिन्छ?",
+      title: "🗃️ इन्टरनेट प्रयोग गर्न के चाहिन्छ?",
       content: `
         <h3>डान्स शो जस्तो सोच्नुहोस्:</h3>
         <ul>
@@ -1900,7 +1943,7 @@ void main() {
     },
     {
       id: "internet-metaphor",
-      title: "5. वास्तविक उदाहरण",
+      title: "🌴 वास्तविक उदाहरण",
       content: `
         <p>📬 <strong>इन्टरनेट</strong> = ठूलो डिजिटल शहर</p>
         <p>🏘 <strong>Website</strong> = घर/पसल</p>
@@ -1911,7 +1954,7 @@ void main() {
     },
     {
       id: "internet-uses",
-      title: "6. इन्टरनेट प्रयोगका उदाहरणहरू",
+      title: " 🎮इन्टरनेट प्रयोगका उदाहरणहरू",
       content: `
         <table>
           <tr><th>प्रयोग</th><th>उदाहरण</th></tr>
@@ -1956,7 +1999,7 @@ void main() {
 },
 {
   id: "web-development",
-  title: "💻 वेब विकास परिचय",
+  title: " वेब विकास परिचय",
   icon: "💻",
   lessons: [
     {
@@ -1981,7 +2024,9 @@ void main() {
       title: "🏷️ HTML ट्यागहरू: लेबलहरू",
       content: `
         <h2>HTML ट्यागहरू: लेबलहरू 🏷️</h2>
-        <p>ट्यागहरू नाम ट्याग जस्ता हुन्छन्: <code>&lt;h1&gt;</code> प्रधानाध्यापकको लेबल (सबैभन्दा ठूलो), <code>&lt;p&gt;</code> विद्यार्थीको लेबल (सामान्य)। <code>&lt;/h1&gt;</code> नबन्द गरेको भनेको आधा पोशाक लगाएको जस्तै हो!</p>
+        <p>ट्यागहरू नाम ट्याग जस्ता हुन्छन्:
+         <h3>प्रधानाध्यापकको लेबल (सबैभन्दा ठूलो)</h3>,
+         </h4> विद्यार्थीको लेबल (सामान्य)</h4>। <code>&lt;/h1&gt;</code> नबन्द गरेको भनेको आधा पोशाक लगाएको जस्तै हो!</p>
         
         <h3>जान्नै पर्ने ट्यागहरू:</h3>
         <table>
@@ -2132,7 +2177,7 @@ void main() {
           <tr><td>.html बिना फाइल बचत गर्नु</td><td>✅ mypage.html भनेर बचत गर्नुहोस्</td></tr>
           <tr><td>ट्यागहरू CAPITAL मा लेख्नु</td><td>✅ साना अक्षरमा लेख्नुहोस् जस्तै &lt;p&gt;</td></tr>
           <tr><td>ट्याग बन्द गर्न भुल्नु</td><td>✅ &lt;/p&gt; लेख्न नबिर्सनुहोस्</td></tr>
-          <tr><td>कोड लेख्ने मुभमा Notepad मा खोल्नु</td><td>✅ Right‑click → Open in Chrome गर्नुहोस्</td></tr>
+          <tr><td>कोड  लेख्न मुभमा Notepad मा खोल्नु</td><td>✅ Right‑click → Open in Chrome गर्नुहोस्</td></tr>
         </table>
       `
     }
@@ -2141,7 +2186,7 @@ void main() {
 
           {
   id: "css-basics",
-  title: "🎨 CSS परिचय",
+  title: "CSS परिचय",
   icon: "🖌️",
   lessons: [
     {
@@ -2178,20 +2223,32 @@ void main() {
       id: "css-lesson-3",
       title: "🧩 CSS कहाँ लेख्ने?",
       content: `
-        <p>तीन तरिका:</p>
-        <ol>
-          <li><strong>Inline CSS</strong> – HTML ट्याग भित्र<br>
-          <code>&lt;p style="color:red;"&gt;Hello&lt;/p&gt;</code></li>
-          <li><strong>Internal CSS</strong> – HTML कागजातको <code>&lt;head&gt;</code> भित्र<br>
-            <code>&lt;style&gt; p { color: red; } &lt;/style&gt;</code></li>
-          <li><strong>External CSS</strong> – छुट्टै <code>.css</code> फाइलमा<br>
-            <code>p { color: red; }</code><br>
-            HTML मा लिंक गर्ने:<br>
-            <code>&lt;link rel="stylesheet" href="style.css"&gt;</code></li>
-        </ol>
-        <p><em>🧠 उधाहरण:</em> Inline = हातमा टाँसेको नोट<br>
-        Internal = किताबभित्रको नोट<br>
-        External = छुट्टै नोटबुकमा लेखेको नोट।</p>jfdhdfjndfgjk`
+      <p>तीन तरिका:</p>
+<ol>
+  <li><strong>Inline CSS</strong> – HTML ट्याग भित्र<br>
+    <div class="code-example">
+      <pre><code>&lt;p style="color:red;"&gt;Hello&lt;/p&gt;</code></pre>
+    </div>
+  </li>
+  <li><strong>Internal CSS</strong> – HTML कागजातको <code>&lt;head&gt;</code> भित्र<br>
+    <div class="code-example">
+      <pre><code>&lt;style&gt; p { color: red; } &lt;/style&gt;</code></pre>
+    </div>
+  </li>
+  <li><strong>External CSS</strong> – छुट्टै <code>.css</code> फाइलमा<br>
+    <div class="code-example">
+      <pre><code>p { color: red; }</code></pre>
+    </div>
+    HTML मा लिंक गर्ने:<br>
+    <div class="code-example">
+      <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+    </div>
+  </li>
+</ol>
+<p><em>🧠 उदाहरण:</em> Inline = हातमा टाँसेको नोट<br>
+Internal = किताबभित्रको नोट<br>
+External = छुट्टै नोटबुकमा लेखेको नोट।</p>
+      `
     },
     {
       id: "css-lesson-4",
@@ -2307,12 +2364,12 @@ void main() {
 },
 {
   id: "programming-basics",
-  title: "💻 कम्प्युटर प्रोग्रामिङ परिचय",
+  title: " कम्प्युटर प्रोग्रामिङ परिचय",
   icon: "🧠",
   lessons: [
     {
       id: "programming-lesson-1",
-      title: "🧩 Lesson 1: कम्प्युटर प्रोग्रामिङ के हो?",
+      title: "🧩 कम्प्युटर प्रोग्रामिङ के हो?",
       content: `
         
        📘 कम्प्युटर प्रोग्रामिङ भनेको केवल <strong>कम्प्युटरलाई निर्देशन दिनु</strong> हो—ताकि ति तपाईं चाहेको काम गर्दोस्।</p>
@@ -2362,7 +2419,7 @@ void main() {
 
     {
       id: "programming-lesson-2",
-      title: "🧩 Lesson 2: कम्प्युटरले कुन भाषा बुझ्छ?",
+      title: "🧩  कम्प्युटरले कुन भाषा बुझ्छ?",
       content: `
         <p>तपाईं नेपाली वा अंग्रेजीमा कम्प्युटरसँग कुरा गर्न सक्नुहुन्न।</p>
         <p>कम्प्युटरले मात्र बुझ्छ विशेष भाषा—जस्तै QBASIC, C, Python आदि।</p>
@@ -2374,7 +2431,7 @@ void main() {
     },
     {
       id: "programming-lesson-3",
-      title: "🧩 Lesson 3: प्रोग्रामिङमा के गर्छौ?",
+      title: "🧩  प्रोग्रामिङमा के गर्छौ?",
       content: `
         <p>प्रत्येक प्रोग्राममा तपाईंले मात्र तीन कुरा गर्नुहुन्छ:</p>
         <ol>
@@ -2422,7 +2479,9 @@ void main() {
 
         <h3>🚀 यो प्रयास गर्नुहोस्:</h3>
         <ol>
-          <li>QBASIC खोल्नुहोस् (Start → टंक्नुहोस् <kbd>QBASIC</kbd> → प्रेस गर्नुहोस् <kbd>Enter</kbd>)</li>
+          <li>
+           <img src="./images/1(2).png" class="w-full md:w-3/4 lg:w-1/2 mx-auto rounded-lg shadow-md" alt="Your Snapshot of Changunarayan">
+          QBASIC खोल्नुहोस् (Start → टंक्नुहोस् <kbd>QBASIC</kbd> → प्रेस गर्नुहोस् <kbd>Enter</kbd>)</li>
           <li>यस कोड टाइप गर्नुहोस्: <code>PRINT "मेरो नाम _____ हो"</code></li>
           <li>प्रेस गर्नुहोस् <kbd>F5</kbd> → ✨ तपाइँको नाम स्क्रीनमा देखिन्छ!</li>
         </ol>
@@ -2593,7 +2652,7 @@ PRINT "नमस्ते "; N$; "! तपाईं शानदार हुन
           { 
             id:"Modular programming",
             title:"मोड्युलर प्रोग्रामिङ",
-            icon:"",
+            icon:"🛠️",
             lessons:[
               {
                 id:"introduction",
